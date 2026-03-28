@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>GuadagnoDash Pro</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .box {
+      background: #1e293b;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 400px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      background: #22c55e;
+      color: black;
+      cursor: pointer;
+    }
+    a {
+      color: #38bdf8;
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>💸 GuadagnoDash Pro</h1>
+<p>Scopri quanto puoi guadagnare online</p>
+
+<div class="box">
+  <h2>Calcolatore Guadagni</h2>
+  <input type="number" id="giorni" placeholder="Giorni lavorati">
+  <input type="number" id="guadagno" placeholder="Guadagno al giorno (€)">
+  <br>
+  <button onclick="calcola()">Calcola</button>
+  <h3 id="risultato"></h3>
+</div>
+
+<div class="box">
+  <h2>🔥 Metodi per Guadagnare</h2>
+  <p>Clicca e inizia subito:</p>
+
+  <!-- SOSTITUISCI QUESTI LINK -->
+  <a href="https://amzn.to/tuolink" target="_blank">💰 Guadagna con Amazon</a>
+  <a href="https://tuosito-affiliato.com" target="_blank">🚀 Inizia un sito web</a>
+</div>
+
+<script>
+function calcola() {
+  let giorni = document.getElementById("giorni").value;
+  let guadagno = document.getElementById("guadagno").value;
+  let totale = giorni * guadagno;
+  document.getElementById("risultato").innerText = 
+    "Guadagno mensile: € " + totale;
+}
+</script>
+
+</body>
+</html>
